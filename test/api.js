@@ -1030,7 +1030,10 @@ describe('/display_name', function() {
       var NAMES = [
         'André Citroën',
         'the unblinking ಠ_ಠ of ckarlof',
-        'abominable ☃'
+        'abominable ☃',
+        // emoji
+        '👍',
+        '👍🏼'
       ];
       return P.resolve(NAMES).each(function(NAME) {
         mock.token({
@@ -1077,8 +1080,7 @@ describe('/display_name', function() {
         'C1 next \u0085 line',
         'paragraph \u2028 separator',
         'private \uE005 use \uF8FF block',
-        'specials \uFFFB annotation terminator',
-        'pile of \uD83D\uDCA9 lol'
+        'specials \uFFFB annotation terminator'
       ];
       return P.resolve(NAMES).each(function(NAME) {
         mock.token({
